@@ -80,21 +80,24 @@ header .wrap .sns ul li:last-child a img{
 /*** main part ***/
 main{
     height: 1000px;
-    background-size: 100%;
+    background-size: cover;
     background-position: 100% 0%;
     background-repeat: no-repeat;
     background-image: url(../img/main_04.jpg);
-    animation: 12s changeBanner infinite 1s;
+    animation: 36s changeBanner infinite 2s;
 }
 @keyframes changeBanner {
-    0%{background-image: url(../img/main_04.jpg);}
-    16.66%{background-image: url(../img/main_04.jpg);}
-    24.99%{background-image: url(../img/main_05.jpg);}
-    49.98%{background-image: url(../img/main_05.jpg);}
-    58.31%{background-image: url(../img/main_08.jpg);}
-    83.3%{background-image: url(../img/main_08.jpg);}
-    91.63%{background-image: url(../img/main_04.jpg);}
-    100%{background-image: url(../img/main_04.jpg);}
+    0%{background-image: url(../img/main_04.jpg); background-position: 100% 0%;}
+    20%{background-image: url(../img/main_05.jpg);
+    background-position: 100% 0%;}
+    40%{background-image: url(../img/main_06.jpg);
+    background-position: 100% 0%;}
+    60%{background-image: url(../img/main_07.jpg);
+    background-position: 100% 0%;}
+    80%{background-image: url(../img/main_08.jpg);
+    background-position: 100% 0%;}
+    100%{background-image: url(../img/main_04.jpg);
+    background-position: 100% 0%;}
 }
 main .hidebg{display: none;}
 main .wrap{
@@ -393,11 +396,8 @@ main .wrap h1 span{
     align-items: center;
     transition: background-size 0.5s;
 }
-#stores .wrap .cont .box:first-child:hover{
-    background-size: 105%;
-}
 #stores .wrap .cont .box:hover{
-    background-size: 107%;
+    background-size: 110%;
 }
 #stores .wrap .cont .box:nth-child(1){
     width: calc(100% - 20px);
@@ -423,6 +423,24 @@ main .wrap h1 span{
 }
 #stores .wrap .cont .box button:hover{
     background-color: #662021;
+}
+
+
+
+/* mapandimg */
+#mapandimg{
+    height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#mapandimg #map{
+    width: 50%;
+}
+#mapandimg .img{
+    width: 50%;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url(../img/store_map.jpg);
 }
 
 
